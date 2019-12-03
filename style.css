@@ -1,0 +1,89 @@
+/* Write your CSS here */
+/* style.css */
+body{
+  background: rgb(30,30,30)
+  color: green;
+  font-size: 10px;
+  font-family: 'Sulphur Point', sans-serif;
+}
+h1{
+  font-family: Courier;
+  color: white;
+  font-weight: lighter;
+  font-size: 16px;
+}
+h2 {
+  font-family: Courier;
+  color: pink;
+  font-weight: lighter;
+  font-size: 20px;
+}
+a {
+  color: blue;
+}
+a:hover {
+  text-decoration: none;
+  color: purple;
+}
+
+#banner{
+  text-align: center;
+  background-image: url("https://unsplash.it/1000/600?random");
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  color: #2d334a;
+}
+#banner h1 {
+  font-size: 50px;
+}
+#banner p {
+  margin-bottom: 40px;
+  opacity: 0.8;
+  font-size: 30px;
+  font-weight: lighter;
+}
+#banner img {
+  border-radius: 50%;
+}
+#footer{
+  padding: 30px;
+  background-color: black;
+  color: lightgrey;
+}
+
+.cards{
+  margin: 15px auto;
+  width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+
+
+
+
+
+.card-white {
+  background-color: #cb9b42;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(50,50,93,.11);
+  padding: 16px;
+  margin: 16px 0px;
+}
+.card-white img {
+  margin-bottom: 20px;
+
+  @media(max-width: 992px){
+  .cards{
+  width: 750px;
+  }
+}
+@media(max-width: 768px){
+  .cards{
+  width: 90%;
+  grid-template-columns: 1fr;
+  }
+}
